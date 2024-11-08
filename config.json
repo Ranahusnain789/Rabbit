@@ -1,5 +1,5 @@
 {
-  "rabbitmq_address": "amqps://sylriuyc:JRm6YXvQEkNU_KMPpBxyjLQA0BjQYgX0@cougar.rmq.cloudamqp.com/sylriuyc",
+  "rabbitmq_address": "Enter your address",
   "turn_duration": 1,
   "map_size": [10, 10],
   "map_layout": [
