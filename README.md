@@ -11,7 +11,6 @@ RabbitRunner is a Python-based solution that leverages RabbitMQ to handle task q
 Clone this repository and install the required packages:
 
 ```bash
-Copy code
 git clone https://github.com/Ranahusnain789/RabbitRunner.git
 cd RabbitRunner
 pip install -r requirements.txt
@@ -26,7 +25,6 @@ Before running the project, you need to update the RabbitMQ address in the confi
 Open `Config.json` and add your RabbitMQ server's address. It should look like this:
 
 ```json
-Copy code
 {
   "rabbitmq_address": "your_rabbitmq_address_here"
 }
@@ -50,7 +48,6 @@ Configure RabbitMQ Settings: Adjust RABBITMQ_HOST, RABBITMQ_PORT, and other para
 Use the producer.py file to send messages to the queue.
 
 ```bash
-Copy code
 python producer.py
 ```
 ## Starting a Consumer:
