@@ -12,7 +12,7 @@ Clone this repository and install the required packages:
 
 ```bash
 Copy code
-git clone https://github.com/yourusername/RabbitRunner.git
+git clone https://github.com/Ranahusnain789/RabbitRunner.git
 cd RabbitRunner
 pip install -r requirements.txt
 ```
