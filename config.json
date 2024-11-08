@@ -1,5 +1,5 @@
 {
-  "rabbitmq_address": "Enter your address",
+  "rabbitmq_address": "your_rabbitmq_address_here",
   "turn_duration": 1,
   "map_size": [10, 10],
   "map_layout": [
