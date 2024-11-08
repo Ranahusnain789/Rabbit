@@ -7,7 +7,7 @@ import pika
 import pika.exceptions
 
 # RabbitMQ connection details
-rabbitmq_address = "Enter your address"
+rabbitmq_address = "your_rabbitmq_address_here"
 
 def generate_random_string(length=8):
     """Generate a random string of given length."""
