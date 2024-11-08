@@ -16,19 +16,44 @@ git clone https://github.com/Ranahusnain789/RabbitRunner.git
 cd RabbitRunner
 pip install -r requirements.txt
 ```
+
+## Configure RabbitMQ connection:
 Ensure RabbitMQ is running on your system, either locally or on a remote server.
+Before running the project, you need to update the RabbitMQ address in the configuration files.
+
+### Step 1: Update Config.json
+
+Open `Config.json` and add your RabbitMQ server's address. It should look like this:
+
+```json
+Copy code
+{
+  "rabbitmq_address": "your_rabbitmq_address_here"
+}
+```
+Replace `your_rabbitmq_address_here` with the actual RabbitMQ URL or IP address (e.g., localhost for a local server or the full address for a remote server).
+
+### Step 2: Update testrabbit.py
+
+Open `testrabbit.py` and add your RabbitMQ server's address. It should look like this:
+
+```python
+# RabbitMQ connection details
+rabbitmq_address = "your_rabbitmq_address_here"
+```
+Replace `your_rabbitmq_address_here` with the actual RabbitMQ URL or IP address (e.g., localhost for a local server or the full address for a remote server).
 
 # Usage
 Configure RabbitMQ Settings: Adjust RABBITMQ_HOST, RABBITMQ_PORT, and other parameters in the configuration file.
 
-# Starting a Producer:
+## Starting a Producer:
 Use the producer.py file to send messages to the queue.
 
 ```bash
 Copy code
 python producer.py
 ```
-# Starting a Consumer:
+## Starting a Consumer:
 Run the consumer.py script to process tasks from the queue.
 
 ```bash
@@ -36,7 +61,7 @@ python consumer.py
 ```
 RabbitRunner handles sending and receiving messages, allowing developers to focus on task processing logic.
 
-# Examples
+### Examples
 To enqueue a task:
 
 ```python
